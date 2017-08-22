@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name": "Continuous Integration & Delivery",
+        "description": "Delivery shizzle",
+        "cl":"Tim Vierbergen",
+        "clEmail": "tim.ysewyn@ordina.be",
+        "clImage": "tivi.jpg",
+        "tags": ["CI", "DevOps", "GOCD", "Jenkins", "TestRail"]
+    },
+    {
+        "id": 2,
+        "name": "Microservices",
+        "description": "Microservices bullshit",
+        "cl":"Tim Ysewyn",
+        "clEmail": "tim.ysewyn@ordina.be",
+        "clImage": "tiys.jpg",
+        "tags": ["Spring Cloud", "Netflix OSS", "Spring REST Docs", "Spring HATEOAS", "DDD"]
+    },
+    {
+        "id": 3,
+        "name":"Cloud & PaaS",
+        "description": "Cloud & PaasHaas",
+        "cl": "Dieter Hubau",
+        "clEmail": "dieter.hubau@ordina.be",
+        "clImage": "dihu.jpg",
+        "tags": ["Cloud", "PaaS", "CloudFoundry", "Openshift", "Azure", "Amazon Web Services"]
+    },
+    {
+        "id": 4,
+        "name":"JVM Languages",
+        "description":"Gradle magic",
+        "cl": "Yannick De Turck",
+        "clEmail": "yannick.de.turck@ordina.be",
+        "clImage": "yade.jpg",
+        "tags": ["Java", "Scala", "Reactive", "Maven", "Git", "Lagom", "Akka", "Play", "Kafka", "CQRS", "ES", "DDD"]
+    },
+    {
+        "id": 5,
+        "name": "Continuous Integration & Delivery",
+        "description": "Delivery shizzle",
+        "cl":"Tim Vierbergen",
+        "clEmail": "tim.ysewyn@ordina.be",
+        "clImage": "tivi.jpg",
+        "tags": ["CI", "DevOps", "GOCD", "Jenkins", "TestRail"]
+    },
+    {
+        "id": 6,
+        "name": "Microservices",
+        "description": "Microservices bullshit",
+        "cl":"Tim Ysewyn",
+        "clEmail": "tim.ysewyn@ordina.be",
+        "clImage": "tiys.jpg",
+        "tags": ["Spring Cloud", "Netflix OSS", "Spring REST Docs", "Spring HATEOAS", "DDD"]
+    },
+    {
+        "id": 7,
+        "name":"Cloud & PaaS",
+        "description": "Cloud & PaasHaas",
+        "cl": "Dieter Hubau",
+        "clEmail": "dieter.hubau@ordina.be",
+        "clImage": "dihu.jpg",
+        "tags": ["Cloud", "PaaS", "CloudFoundry", "Openshift", "Azure", "Amazon Web Services"]
+    },
+    {
+        "id": 8,
+        "name":"JVM Languages",
+        "description":"Gradle magic",
+        "cl": "Yannick De Turck",
+        "clEmail": "yannick.de.turck@ordina.be",
+        "clImage": "yade.jpg",
+        "tags": ["Java", "Scala", "Reactive", "Maven", "Git", "Lagom", "Akka", "Play", "Kafka", "CQRS", "ES", "DDD"]
+    },
+    {
+        "id": 9,
+        "name": "Continuous Integration & Delivery",
+        "description": "Delivery shizzle",
+        "cl":"Tim Vierbergen",
+        "clEmail": "tim.ysewyn@ordina.be",
+        "clImage": "tivi.jpg",
+        "tags": ["CI", "DevOps", "GOCD", "Jenkins", "TestRail"]
+    },
+    {
+        "id": 10,
+        "name": "Microservices",
+        "description": "Microservices bullshit",
+        "cl":"Tim Ysewyn",
+        "clEmail": "tim.ysewyn@ordina.be",
+        "clImage": "tiys.jpg",
+        "tags": ["Spring Cloud", "Netflix OSS", "Spring REST Docs", "Spring HATEOAS", "DDD"]
+    },
+    {
+        "id": 11,
+        "name":"Cloud & PaaS",
+        "description": "Cloud & PaasHaas",
+        "cl": "Dieter Hubau",
+        "clEmail": "dieter.hubau@ordina.be",
+        "clImage": "dihu.jpg",
+        "tags": ["Cloud", "PaaS", "CloudFoundry", "Openshift", "Azure", "Amazon Web Services"]
+    },
+    {
+        "id": 12,
+        "name":"JVM Languages",
+        "description":"Gradle magic",
+        "cl": "Yannick De Turck",
+        "clEmail": "yannick.de.turck@ordina.be",
+        "clImage": "yade.jpg",
+        "tags": ["Java", "Scala", "Reactive", "Maven", "Git", "Lagom", "Akka", "Play", "Kafka", "CQRS", "ES", "DDD"]
+    },
+    {
+        "id": 13,
+        "name": "Continuous Integration & Delivery",
+        "description": "Delivery shizzle",
+        "cl":"Tim Vierbergen",
+        "clEmail": "tim.ysewyn@ordina.be",
+        "clImage": "tivi.jpg",
+        "tags": ["CI", "DevOps", "GOCD", "Jenkins", "TestRail"]
+    },
+    {
+        "id": 14,
+        "name": "Microservices",
+        "description": "Microservices bullshit",
+        "cl":"Tim Ysewyn",
+        "clEmail": "tim.ysewyn@ordina.be",
+        "clImage": "tiys.jpg",
+        "tags": ["Spring Cloud", "Netflix OSS", "Spring REST Docs", "Spring HATEOAS", "DDD"]
+    },
+    {
+        "id": 15,
+        "name":"Cloud & PaaS",
+        "description": "Cloud & PaasHaas",
+        "cl": "Dieter Hubau",
+        "clEmail": "dieter.hubau@ordina.be",
+        "clImage": "dihu.jpg",
+        "tags": ["Cloud", "PaaS", "CloudFoundry", "Openshift", "Azure", "Amazon Web Services"]
+    },
+    {
+        "id": 16,
+        "name":"JVM Languages",
+        "description":"Gradle magic",
+        "cl": "Yannick De Turck",
+        "clEmail": "yannick.de.turck@ordina.be",
+        "clImage": "yade.jpg",
+        "tags": ["Java", "Scala", "Reactive", "Maven", "Git", "Lagom", "Akka", "Play", "Kafka", "CQRS", "ES", "DDD"]
+    }
+]

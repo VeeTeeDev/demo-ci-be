@@ -1,0 +1,10 @@
+FROM node
+
+COPY package.json .
+COPY dist dist
+
+RUN npm install
+
+EXPOSE 8090
+
+CMD node dist/server.js
