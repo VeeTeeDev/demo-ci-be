@@ -1,0 +1,179 @@
+{
+	"variables": [],
+	"info": {
+		"name": "demo-ci-be",
+		"_postman_id": "198705e1-3897-a068-c25b-78399dfe7fe3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all ccs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"tests[\"16 ccs returned\"] = jsonData.length === 16;",
+							"var firstResult = jsonData[0];",
+							"tests[\"First entry contains id \"] ='id' in firstResult;",
+							"tests[\"First entry contains name \"] = 'name' in firstResult;",
+							"tests[\"First entry contains description\"] = 'description' in firstResult;",
+							"tests[\"First entry contains cl\"] = 'cl' in firstResult;",
+							"tests[\"First entry contains clemail\"] = 'clEmail' in firstResult;",
+							"tests[\"First entry contains climage\"] = 'clImage' in firstResult;",
+							"tests[\"First entry contains tags\"] = firstResult.tags.length !== 0;",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/ccs",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get detail of cc",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"Result contains id\"] ='id' in jsonData;",
+							"tests[\"Id = 1\"] = jsonData.id === 1;",
+							"tests[\"Result contains name\"] ='name' in jsonData;",
+							"tests[\"name is Continuous Integration & Delivery\"] = jsonData.name === \"Continuous Integration & Delivery\";",
+							"tests[\"Result contains cl\"] ='cl' in jsonData;",
+							"tests[\"cl is tim vierbergen\"] = jsonData.cl === \"Tim Vierbergen\";",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "localhost:8080/ccs/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search existing ccs",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"var firstResult = jsonData[0];",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"4 results returned\"] = jsonData.length === 4;",
+							"tests[\"First result contains id \"] ='id' in firstResult;",
+							"tests[\"Cl name contains dieter hubau\"] = firstResult.cl === \"Dieter Hubau\";"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "localhost:8080/ccs/search?needle=hubau",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ccs",
+						"search"
+					],
+					"query": [
+						{
+							"key": "needle",
+							"value": "hubau",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Search nonsense",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);",
+							"",
+							"tests[\"Status code is 200\"] = responseCode.code === 200;",
+							"tests[\"No results returned\"] = jsonData.length === 0;"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": {
+					"raw": "localhost:8080/ccs/search?needle=hahahahahahaha",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ccs",
+						"search"
+					],
+					"query": [
+						{
+							"key": "needle",
+							"value": "hahahahahahaha",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
